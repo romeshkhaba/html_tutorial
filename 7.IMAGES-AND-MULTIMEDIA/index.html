@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Images and Multimedia</title>
+</head>
+<body>
+  <h1>HTML IMAGES AND MULTIMEDIA</h1>
+  <p>HTML can display visual and audio content through elements such as <code>&lt;img&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;source&gt;</code>, <code>&lt;track&gt;</code>, <code>&lt;figure&gt;</code>, and <code>&lt;figcaption&gt;</code>.</p>
+  <p>The <code>&lt;img&gt;</code> tag is used for images and should always include the <code>alt</code> attribute so the image still has meaning if it cannot be seen or loaded.</p>
+  <p>The <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements can include controls for playback, while <code>&lt;picture&gt;</code> can serve different image files for different screen sizes.</p>
+
+  <figure>
+    <img src="sample-image.svg" alt="Sample placeholder image that demonstrates the image tag">
+    <figcaption>This image is shown with a figure caption.</figcaption>
+  </figure>
+
+  <pre><code>&lt;audio controls&gt;
+  &lt;source src="song.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;video controls width="320"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+</body>
+</html>

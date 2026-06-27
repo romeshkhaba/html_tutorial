@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Interactive Elements</title>
+</head>
+<body>
+  <h1>HTML INTERACTIVE ELEMENTS</h1>
+  <p>HTML includes several built-in interactive elements that let users reveal content, choose from suggestions, and understand status without writing much custom code.</p>
+  <p>Important interactive tags include <code>&lt;details&gt;</code>, <code>&lt;summary&gt;</code>, <code>&lt;dialog&gt;</code>, <code>&lt;progress&gt;</code>, <code>&lt;meter&gt;</code>, and <code>&lt;datalist&gt;</code>. The <code>&lt;template&gt;</code> element is also useful when content should stay inactive until JavaScript uses it.</p>
+  <p>These elements are powerful because they provide meaning and behavior together, which often reduces the amount of extra scripting needed.</p>
+
+  <details>
+    <summary>Click to see more</summary>
+    <p>The details element can hide and show content without building a custom dropdown.</p>
+  </details>
+
+  <p>Course progress:</p>
+  <progress value="70" max="100">70%</progress>
+
+  <p>HTML confidence level:</p>
+  <meter value="8" min="0" max="10">8 out of 10</meter>
+
+  <p>Choose a browser:</p>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Chrome"></option>
+    <option value="Firefox"></option>
+    <option value="Safari"></option>
+  </datalist>
+</body>
+</html>

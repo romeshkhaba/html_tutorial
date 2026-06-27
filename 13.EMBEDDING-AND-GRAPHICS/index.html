@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Embedding and Graphics</title>
+</head>
+<body>
+  <h1>HTML EMBEDDING AND GRAPHICS</h1>
+  <p>HTML can embed external content and display graphics by using elements such as <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;svg&gt;</code>, and <code>&lt;canvas&gt;</code>.</p>
+  <p>The <code>&lt;iframe&gt;</code> tag is often used to show another webpage, map, or video inside the current page. SVG is ideal for scalable icons and shapes, while canvas is commonly used for drawing with JavaScript.</p>
+  <p>These elements are usually taught together because they all deal with bringing visual or embedded content into a page beyond normal text and images.</p>
+
+  <svg width="180" height="100" aria-label="Simple SVG example">
+    <rect x="10" y="10" width="160" height="80" fill="lightblue" stroke="navy"></rect>
+    <text x="40" y="55" fill="navy">SVG Example</text>
+  </svg>
+
+  <pre><code>&lt;iframe src="https://example.com" title="Embedded Example"&gt;&lt;/iframe&gt;
+&lt;canvas width="300" height="150"&gt;&lt;/canvas&gt;</code></pre>
+</body>
+</html>
