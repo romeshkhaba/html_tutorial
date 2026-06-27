@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display, Position, Float, and Overflow</title>
+  <style>
+    .inline-box {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #fde68a;
+      margin-right: 6px;
+    }
+
+    .relative-box {
+      position: relative;
+      width: 220px;
+      padding: 20px;
+      background: #e2e8f0;
+    }
+
+    .absolute-badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ef4444;
+      color: white;
+      padding: 4px 8px;
+    }
+
+    .overflow-box {
+      width: 240px;
+      height: 70px;
+      overflow: auto;
+      border: 1px solid #94a3b8;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS DISPLAY, POSITION, FLOAT, AND OVERFLOW</h1>
+  <p>The <code>display</code> property controls how an element behaves in the layout, such as block, inline, inline-block, flex, grid, or none.</p>
+  <p>The <code>position</code> property controls how an element is placed. Common values are static, relative, absolute, fixed, and sticky. Float is an older layout method that still appears in some projects, while <code>overflow</code> controls what happens when content does not fit inside a box.</p>
+  <p>These topics are grouped because they all affect how content is arranged, layered, or clipped inside the page.</p>
+
+  <div class="inline-box">Inline Block 1</div>
+  <div class="inline-box">Inline Block 2</div>
+
+  <div class="relative-box">
+    Relative box
+    <span class="absolute-badge">ABS</span>
+  </div>
+
+  <div class="overflow-box">This box has a fixed height, so extra content can scroll when it becomes too long for the available space inside the container.</div>
+</body>
+</html>

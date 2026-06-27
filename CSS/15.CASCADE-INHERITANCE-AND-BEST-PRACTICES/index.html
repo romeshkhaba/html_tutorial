@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cascade, Inheritance, and Best Practices</title>
+  <style>
+    body {
+      color: #334155;
+      font-family: Arial, sans-serif;
+    }
+
+    .note {
+      color: #2563eb;
+    }
+
+    .note.important {
+      color: #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS CASCADE, INHERITANCE, AND BEST PRACTICES</h1>
+  <p>The cascade is the system CSS uses to decide which rule should apply when multiple rules target the same element. It considers importance, origin, specificity, and source order.</p>
+  <p>Inheritance means some properties, like text color and font family, pass from parent elements to their children unless a more specific rule changes them.</p>
+  <p>Good CSS practice includes keeping selectors simple, reusing classes, organizing related rules together, avoiding unnecessary <code>!important</code>, and writing styles that are easy to read and update.</p>
+
+  <p>This paragraph inherits text color from the body.</p>
+  <p class="note">This paragraph uses a class rule.</p>
+  <p class="note important">This paragraph uses a more specific combined class selector, so it wins.</p>
+</body>
+</html>

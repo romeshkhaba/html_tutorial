@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 16px;
+      background: #f8fafc;
+    }
+
+    .grid-item {
+      padding: 20px;
+      text-align: center;
+      background: #a78bfa;
+      color: white;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS GRID</h1>
+  <p>CSS Grid is a two-dimensional layout system. It can control both rows and columns at the same time, which makes it powerful for larger page layouts and structured content areas.</p>
+  <p>Important grid properties include <code>display: grid</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>gap</code>, <code>grid-column</code>, <code>grid-row</code>, and named grid areas.</p>
+  <p>Grid works especially well for dashboards, galleries, page sections, and any design that needs precise row and column control.</p>
+
+  <div class="grid-layout">
+    <div class="grid-item wide">Wide Item</div>
+    <div class="grid-item">Three</div>
+    <div class="grid-item">Four</div>
+    <div class="grid-item">Five</div>
+    <div class="grid-item">Six</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Custom Properties, Functions, and Math</title>
+  <style>
+    :root {
+      --brand-color: #7c3aed;
+      --space: 1rem;
+    }
+
+    .panel {
+      width: clamp(220px, 50vw, 420px);
+      padding: calc(var(--space) * 1.5);
+      background: var(--brand-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS CUSTOM PROPERTIES, FUNCTIONS, AND MATH</h1>
+  <p>Custom properties, often called CSS variables, let you store reusable values such as colors, spacing, and font sizes. They are created with names like <code>--brand-color</code> and used with <code>var()</code>.</p>
+  <p>CSS functions like <code>calc()</code>, <code>clamp()</code>, <code>min()</code>, and <code>max()</code> help create flexible rules that respond to different screen sizes and layout needs.</p>
+  <p>These features are grouped together because they help stylesheets become more reusable, scalable, and easier to update.</p>
+
+  <div class="panel">This panel uses a CSS variable for color, <code>calc()</code> for spacing, and <code>clamp()</code> for responsive width.</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-Classes, Pseudo-Elements, and Cursors</title>
+  <style>
+    .action {
+      padding: 10px 16px;
+      border: none;
+      background: #0f766e;
+      color: white;
+      cursor: pointer;
+    }
+
+    .action:hover {
+      background: #115e59;
+    }
+
+    .action:focus {
+      outline: 3px solid #99f6e4;
+    }
+
+    .label::before {
+      content: "Note: ";
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS PSEUDO-CLASSES, PSEUDO-ELEMENTS, AND CURSORS</h1>
+  <p>Pseudo-classes style an element in a special state, such as <code>:hover</code>, <code>:focus</code>, <code>:active</code>, <code>:checked</code>, or <code>:nth-child()</code>.</p>
+  <p>Pseudo-elements style a virtual part of an element, such as <code>::before</code>, <code>::after</code>, <code>::first-letter</code>, and <code>::placeholder</code>. Cursor styles can also signal interactivity by changing the pointer appearance.</p>
+  <p>These features work well together because they help build interactive, expressive interfaces without changing the HTML structure too much.</p>
+
+  <p class="label">This paragraph uses a pseudo-element.</p>
+  <button class="action" type="button">Hover or Focus Me</button>
+</body>
+</html>

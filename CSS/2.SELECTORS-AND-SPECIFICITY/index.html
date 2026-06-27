@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors and Specificity</title>
+  <style>
+    p {
+      color: #334155;
+    }
+
+    .highlight {
+      color: seagreen;
+      font-weight: bold;
+    }
+
+    #special-note {
+      color: firebrick;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS SELECTORS AND SPECIFICITY</h1>
+  <p>Selectors tell CSS which HTML elements should receive a style. Common selectors include element selectors, class selectors, id selectors, attribute selectors, descendant selectors, and child selectors.</p>
+  <p>Specificity is the rule that decides which style wins when more than one selector targets the same element. In general, id selectors are stronger than class selectors, and class selectors are stronger than element selectors.</p>
+  <p>Good CSS usually prefers reusable classes instead of styling everything with ids, because classes make designs easier to maintain and repeat.</p>
+
+  <p>This paragraph is styled by the element selector.</p>
+  <p class="highlight">This paragraph is styled by a class selector.</p>
+  <p id="special-note" class="highlight">This paragraph has both a class and an id, so the id style wins.</p>
+
+  <pre><code>p { color: gray; }
+.highlight { color: seagreen; }
+#special-note { color: firebrick; }</code></pre>
+</body>
+</html>

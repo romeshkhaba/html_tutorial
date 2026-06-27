@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model, Spacing, and Sizing</title>
+  <style>
+    .box {
+      box-sizing: border-box;
+      width: 260px;
+      padding: 20px;
+      border: 6px solid #2563eb;
+      margin: 20px 0;
+      background: #eff6ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS BOX MODEL, SPACING, AND SIZING</h1>
+  <p>Every HTML element is treated like a rectangular box. The CSS box model includes content, padding, border, and margin.</p>
+  <p>Padding adds space inside the element, border wraps around the padding, and margin creates space outside the element. Width, height, min-width, max-width, and <code>box-sizing</code> control how large the box becomes.</p>
+  <p>Understanding the box model is one of the most important CSS skills because spacing and sizing problems often come from it.</p>
+
+  <div class="box">This example box uses width, padding, border, margin, and <code>box-sizing: border-box</code>.</div>
+</body>
+</html>

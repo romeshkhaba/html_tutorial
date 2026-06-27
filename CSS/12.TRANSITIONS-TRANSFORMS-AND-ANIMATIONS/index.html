@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transitions, Transforms, and Animations</title>
+  <style>
+    .motion-box {
+      width: 140px;
+      padding: 24px;
+      text-align: center;
+      background: #f97316;
+      color: white;
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: float-box 2s ease-in-out infinite;
+    }
+
+    .motion-box:hover {
+      transform: scale(1.08) rotate(2deg);
+      background: #ea580c;
+    }
+
+    @keyframes float-box {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS TRANSITIONS, TRANSFORMS, AND ANIMATIONS</h1>
+  <p>Transitions make property changes happen smoothly over time. Transforms change the shape or position of an element with functions like <code>scale()</code>, <code>rotate()</code>, <code>translate()</code>, and <code>skew()</code>.</p>
+  <p>Animations use <code>@keyframes</code> to define multi-step motion that can loop, pause, delay, or run once. These tools are often taught together because they all add movement and visual change.</p>
+  <p>Good motion should support the design and improve feedback instead of distracting the user.</p>
+
+  <div class="motion-box">Animated Box</div>
+</body>
+</html>

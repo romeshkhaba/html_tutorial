@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Forms, Tables, and UI Styling</title>
+  <style>
+    input,
+    select,
+    button {
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid #94a3b8;
+      border-radius: 8px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 360px;
+      margin-top: 16px;
+    }
+
+    th,
+    td {
+      border: 1px solid #cbd5e1;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS FORMS, TABLES, AND UI STYLING</h1>
+  <p>Forms and tables often need careful styling because browsers apply their own default appearance. CSS can improve readability, spacing, focus states, borders, and alignment.</p>
+  <p>Common form styling includes improving inputs, selects, textareas, buttons, labels, and placeholders. Table styling often uses borders, padding, row striping, hover states, and <code>border-collapse</code>.</p>
+  <p>This topic is grouped together because both forms and tables are common user interface elements that benefit from consistent design rules.</p>
+
+  <form>
+    <p><input type="text" placeholder="Enter your name"></p>
+    <p>
+      <select>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select>
+    </p>
+    <p><button type="button">Save</button></p>
+  </form>
+
+  <table>
+    <tr>
+      <th>Topic</th>
+      <th>Level</th>
+    </tr>
+    <tr>
+      <td>Selectors</td>
+      <td>Beginner</td>
+    </tr>
+    <tr>
+      <td>Flexbox</td>
+      <td>Intermediate</td>
+    </tr>
+  </table>
+</body>
+</html>

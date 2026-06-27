@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: center;
+      padding: 16px;
+      background: #f1f5f9;
+    }
+
+    .flex-item {
+      flex: 1 1 100px;
+      padding: 18px;
+      text-align: center;
+      background: #38bdf8;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS FLEXBOX</h1>
+  <p>Flexbox is a one-dimensional layout system that arranges items in a row or column. It is excellent for aligning content, spacing items evenly, and building responsive components.</p>
+  <p>Important flex properties include <code>display: flex</code>, <code>justify-content</code>, <code>align-items</code>, <code>gap</code>, <code>flex-wrap</code>, <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>.</p>
+  <p>Flexbox is especially useful for menus, cards, button groups, form rows, and any layout where items flow in a single direction.</p>
+
+  <div class="flex-container">
+    <div class="flex-item">One</div>
+    <div class="flex-item">Two</div>
+    <div class="flex-item">Three</div>
+  </div>
+</body>
+</html>

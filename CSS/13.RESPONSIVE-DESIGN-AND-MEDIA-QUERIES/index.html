@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Responsive Design and Media Queries</title>
+  <style>
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .card {
+      padding: 16px;
+      background: #e0f2fe;
+      border: 1px solid #7dd3fc;
+    }
+
+    @media (min-width: 700px) {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS RESPONSIVE DESIGN AND MEDIA QUERIES</h1>
+  <p>Responsive design makes a layout adapt to different screens instead of staying fixed at one size. This is essential for phones, tablets, laptops, and large monitors.</p>
+  <p>Media queries let CSS apply different rules based on screen width, height, orientation, or other conditions. A common approach is mobile-first design, where small screens are styled first and larger layouts are added later.</p>
+  <p>Flexible units, fluid images, grid systems, and media queries all work together to make pages responsive.</p>
+
+  <div class="cards">
+    <div class="card">Card One</div>
+    <div class="card">Card Two</div>
+    <div class="card">Card Three</div>
+  </div>
+</body>
+</html>

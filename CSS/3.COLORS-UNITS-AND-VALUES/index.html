@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Colors, Units, and Values</title>
+  <style>
+    .swatch {
+      display: inline-block;
+      width: 110px;
+      padding: 12px;
+      margin-right: 8px;
+      color: white;
+      text-align: center;
+    }
+
+    .hex {
+      background: #2563eb;
+    }
+
+    .rgb {
+      background: rgb(16, 185, 129);
+    }
+
+    .hsl {
+      background: hsl(14, 90%, 55%);
+    }
+
+    .unit-demo {
+      width: 18rem;
+      background: #e2e8f0;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS COLORS, UNITS, AND VALUES</h1>
+  <p>CSS values describe what style should be applied. These values can be colors, measurements, keywords, percentages, functions, or other supported data types.</p>
+  <p>Colors can be written as named colors, hexadecimal values, RGB, RGBA, HSL, or HSLA. Measurements often use <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>vw</code>, and <code>vh</code>.</p>
+  <p>Choosing the right unit matters because fixed units like <code>px</code> behave differently from flexible units like <code>rem</code> or percentages.</p>
+
+  <div class="swatch hex">HEX</div>
+  <div class="swatch rgb">RGB</div>
+  <div class="swatch hsl">HSL</div>
+
+  <p class="unit-demo">This paragraph uses <code>rem</code> values for width and padding, which helps scale the design more consistently.</p>
+</body>
+</html>
